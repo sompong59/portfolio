@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ຮຽນຮູ້ HTML</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="main-nav">
+        <a class="logo" href="#">W3Laos</a>
+        <ul>
+            <li><a class="active" href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">BOOTSTRAP</a></li>
+            <li><a href="#">W3.CSS</a></li>
+            <li><a href="#">REACT</a></li>
+            <li><a href="#">MYSQL</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">EXCEL</a></li>
+            <li><a href="#">XML</a></li>
+            <li><a href="#">DJANGO</a></li>
+            <li><a href="#">MORE »</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <button class="sidebar-toggle">☰ Menu</button>
+        <aside class="sidebar">
+            <button class="toggle-sidebar-btn"><i class="fas fa-chevron-left"></i></button>
+            <h2><i class="fas fa-book"></i> <span class="link-text">HTML Tutorial</span></h2>
+            <ul>
+                <li><a class="active" href="#"><i class="fas fa-home"></i> <span class="link-text">HTML Home</span></a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> <span class="link-text">HTML Introduction</span></a></li>
+                <li><a href="#"><i class="fas fa-pencil-ruler"></i> <span class="link-text">HTML Editors</span></a></li>
+                <li><a href="#"><i class="fas fa-code"></i> <span class="link-text">HTML Basic</span></a></li>
+                <li><a href="#"><i class="fas fa-cubes"></i> <span class="link-text">HTML Elements</span></a></li>
+                <li><a href="#"><i class="fas fa-tag"></i> <span class="link-text">HTML Attributes</span></a></li>
+                </ul>
+        </aside>
+
+        <main class="main">
+            <h1>HTML Tutorial</h1>
+            <div class="intro">
+                <p>HTML ເປັນພາສາມາດຕະຖານສຳລັບການສ້າງໜ້າເວັບ.</p>
+                <p>ດ້ວຍ HTML ເຈົ້າສາມາດສ້າງເວັບໄຊຂອງເຈົ້າເອງໄດ້.</p>
+                <a href="#" class="button">ເລີ່ມຮຽນ HTML ດຽວນີ້!</a>
+            </div>
+
+            <hr>
+
+            <h2>ຕົວຢ່າງ HTML</h2>
+            <div class="example">
+                <p>ຢ່າກັງວົນຖ້າເຈົ້າບໍ່ເຂົ້າໃຈຕົວຢ່າງນີ້ເທື່ອ.</p>
+                <p>ເຈົ້າຈະໄດ້ຮຽນຮູ້ກ່ຽວກັບແທັກ HTML ທັງໝົດໃນພາຍຫຼັງ.</p>
+                <div class="code-box">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;title&gt;ໜ້າທຳອິດຂອງຂ້ອຍ&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;ນີ້ແມ່ນຫົວຂໍ້ໃຫຍ່&lt;/h1&gt;<br>
+                        &lt;p&gt;ນີ້ແມ່ນຂໍ້ຄວາມ.&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+                <a href="#" class="button try-it">ລອງເບິ່ງຕົວເອງ »</a>
+            </div>
+
+            <hr>
+
+            <h2>ຮຽນຮູ້ HTML</h2>
+            <p>ຮຽນຮູ້ອົງປະກອບພື້ນຖານທີ່ຢູ່ເບື້ອງຫຼັງທຸກໆໜ້າເວັບ:</p>
+            <ul class="learn-list">
+                <li><a href="#">HTML Basic</a></li>
+                <li><a href="#">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML Headings</a></li>
+                <li><a href="#">HTML Paragraphs</a></li>
+                <li><a href="#">HTML Styles - CSS</a></li>
+            </ul>
+
+            <hr>
+
+            <div class="next-prev">
+                <a href="#" class="prev">« Previous</a>
+                <a href="#" class="next">Next »</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 W3Laos. ສະຫງວນລິຂະສິດ.</p>
+    </footer>
+
+    <script>
+        
+        const toggleSidebarBtn = document.querySelector('.toggle-sidebar-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const main = document.querySelector('.main');
+    
+        toggleSidebarBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            main.classList.toggle('sidebar-collapsed');
+    
+            // ປ່ຽນໄອຄອນຂອງປຸ່ມ Toggle
+            if (sidebar.classList.contains('collapsed')) {
+                toggleSidebarBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            } else {
+                toggleSidebarBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            }
+        });
+    </script>
+   
+
+</body>
+</html>
